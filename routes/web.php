@@ -38,3 +38,28 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
     Route::get('/portfolio/create', 'PortfolioController@create')->name('portfolio.create');
 });
 
+
+
+//one to one
+Route::get('ontoone/', 'MemberController@index');
+
+//one to many
+Route::get('add-post/', 'PostController@addPost');
+Route::get('add-comment/{id}', 'PostController@addComment');
+Route::get('get-comments/{id}', 'PostController@getCommentsByPost');
+
+
+//many to many
+Route::get('add-roles/', 'RoleController@addRole');
+Route::get('add-users/', 'RoleController@AddUser');
+Route::get('roles-by-user/{id}', 'RoleController@getAllRolesByUser');
+Route::get('users-by-role/{id}', 'RoleController@getAllUserByRole');
+
+
+//Socialite google auth
+
+ 
+
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('auth/google', 'GoogleController@redirectToGoogle');
+Route::get('auth/google/callback', 'GoogleController@handleGoogleCallback');

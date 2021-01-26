@@ -25,7 +25,10 @@
         <script src="{{ mix('js/app.js') }}" defer></script>
     </head>
     <body class="font-sans antialiased">
-
+<!--     
+        <a href="{{ url('auth/google') }}" style="margin-top: 20px;" class="btn btn-lg btn-success btn-block">
+            <strong>Login With Google</strong>
+        </a>  -->
 
         @inertia
 

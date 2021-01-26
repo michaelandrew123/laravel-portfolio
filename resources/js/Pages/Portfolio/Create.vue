@@ -7,6 +7,7 @@
                  
             </p>
             <a class="btn btn-outline-secondary" href="/portfolio">Portfolio</a>
+
         </div> 
         </div>
         
