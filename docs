@@ -1,3 +1,5 @@
+code laravelproject //open laravelproject
+
 php artisan tinker
 User::factory(30)->create()
 
@@ -9,3 +11,28 @@ ADD MODEL: protected $fillable
 php artisan make:factory ProductFactory --model=Product
 
 php artisan make:migration create_companies_table --create=company
+
+
+
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+
+npm install bootstrap jquery popper.js
+
+php artisan make:model Course -m
+
+php atisan make:controller CouseController --api
+
+php artisan make:model Student -m
+
+php artisan make:controller StudentController --api
+
+
+npm install sweetalert2
+
+php artisan migrate
+
+

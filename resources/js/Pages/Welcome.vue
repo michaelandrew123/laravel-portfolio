@@ -7,9 +7,7 @@
 
             <template v-else>
 
-                <inertia-link href="/portfolio" class="text-sm text-gray-700 underline">
-                    Portfolio
-                </inertia-link>
+                
 
                 <inertia-link :href="route('login')" class="ml-4 text-sm text-gray-700 underline">
                     Login

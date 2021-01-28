@@ -28,6 +28,11 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->name('dashboard');
 
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/students', function () {
+    return Inertia::render('Students');
+})->name('students');
+
 // Route::middleware(['auth:sanctum', 'verified'])->get('/portfolio', 'PortfolioController@index')->name('portfolio.view');
 // Route::middleware(['auth:sanctum', 'verified'])->get('/portfolio', 'PortfolioController@landing')->name('portfolio.landing');  
 
@@ -63,3 +68,9 @@ Route::get('users-by-role/{id}', 'RoleController@getAllUserByRole');
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('auth/google', 'GoogleController@redirectToGoogle');
 Route::get('auth/google/callback', 'GoogleController@handleGoogleCallback');
+
+
+
+
+Route::get('auth/facebook', 'SocialController@facebookRedirect'); 
+Route::get('auth/facebook/callback', 'SocialController@loginWithFacebook');

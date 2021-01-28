@@ -13,6 +13,9 @@
                                 <inertia-link :href="route('dashboard')">
                                     <jet-application-mark class="block h-9 w-auto" />
                                 </inertia-link>
+
+
+                                
                             </div>
 
                             <!-- Navigation Links -->
@@ -229,7 +232,10 @@
             <main>
                 <slot></slot>
             </main>
-
+            
+            <footer class="flex-shrink-0 flex items-center">
+                <slot name="footer"></slot> 
+            </footer>
             <!-- Modal Portal -->
             <portal-target name="modal" multiple>
             </portal-target>

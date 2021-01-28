@@ -9,6 +9,18 @@ Vue.mixin({ methods: { route } });
 Vue.use(InertiaPlugin);
 Vue.use(PortalVue);
 
+const Swal = require('sweetalert2').default;
+
+window.Toast = Swal.mixin({
+    toast: true,
+    position: 'top-end',
+    timer: 3500,
+    timerProgressBar: true 
+})
+
+window.Fire = new Vue();
+
+
 const app = document.getElementById('app');
 
 new Vue({

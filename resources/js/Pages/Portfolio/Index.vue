@@ -1,5 +1,5 @@
 <template>
-    <layout>
+    <layout  title="Glass Css">
         <!-- <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
         
         
@@ -47,15 +47,17 @@
                         </div> 
                     </div>
 
+
+
+
                     <div class="glass-games">
                         <div class="glass-status">
                             <h1>Active Games</h1>
                             <input type="text" />
-                        </div> 
-                        <div class="glass-cards">
-                            
+                        </div>  
+                        <div class="glass-cards"> 
                             <div class="glass-card">
-                                <img :src="'storage/img/assassins.pnh'" alt="" />
+                                <img :src="'storage/img/assassins.png'" alt="" />
                                 <div class="glass-card-info">
                                     <h2>Assassins Creed Valhalla</h2>
                                     <p>PS5 Version</p>
@@ -65,9 +67,9 @@
                                 <h2 class="glass-percentage">62%</h2>
                             </div>
                             <div class="glass-card">
-                                <img :src="'storage/img/assassins.pnh'" alt="" />
+                                <img :src="'storage/img/sackboy.png'" alt="" />
                                 <div class="glass-card-info">
-                                    <h2>Assassins Creed Valhalla</h2>
+                                    <h2>Sackyboy A Great Adventure</h2>
                                     <p>PS5 Version</p>
                                     <div class="glass-progress">
                                     </div>
@@ -75,9 +77,9 @@
                                 <h2 class="glass-percentage">62%</h2>
                             </div>
                             <div class="glass-card">
-                                <img :src="'storage/img/assassins.pnh'" alt="" />
+                                <img :src="`storage/img/spiderman.png`" alt="" />
                                 <div class="glass-card-info">
-                                    <h2>Assassins Creed Valhalla</h2>
+                                    <h2>Spiderman Miles Mora</h2>
                                     <p>PS5 Version</p>
                                     <div class="glass-progress">
                                     </div>
@@ -180,7 +182,7 @@ export default {
         justify-content: space-evenly;
         text-align: center;
         background: linear-gradient(to right bottom, 
-        rgba(255, 255, 255, .7), 
+        rgba(255, 255, 255, 0.7), 
         rgba(255, 255, 255, 0.3)
         );
         border-radius: 2rem;
@@ -212,8 +214,70 @@ export default {
         right: 10px;
     }
     .glass-master h2{
-        width: 50%;
+        width: 40%;
         color: white;
         font-weight: 600;
+    }
+
+    .glass-status{
+        margin-bottom: 3rem;
+    }
+    .glass-status input{
+        background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.7),
+            rgba(255, 255, 255, 0.3)
+        );
+
+        border: none;
+        width: 50%;
+        padding:0.5rem;
+        border-radius: 2rem;
+    }
+    .glass-games{
+        margin: 5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .glass-card{
+        display: flex; 
+        background: linear-gradient(to left top, 
+            rgba(255, 255, 255, 0.2), 
+            rgba(255, 255, 255, 0.5)
+        );
+        border-radius: 1rem;
+        margin: 2rem 0rem;
+        padding: 2rem;
+        box-shadow: 6px 6px 20px rgba(122,122,122,0.2);
+        justify-content: space-between;
+    }
+    .glass-progress{
+        background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+        width: 100%;
+        height: 25%;
+        border-radius: 1rem;
+        position: relative;
+        overflow: hidden;
+    }
+    .glass-progress::after{
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: rgba(236, 236, 236);
+        position: absolute;
+        left: 60%; 
+    }
+    .glass-card-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .glass-percentage{
+        font-weight: bold;
+        background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
     }
 </style>

@@ -1,6 +1,6 @@
 <template> 
 <div>
-      
+       
   <header class="site-header sticky-top py-1">
     <nav class="container d-flex flex-column flex-md-row justify-content-between">
       <a class="py-2" href="#" aria-label="Product">
@@ -27,9 +27,101 @@
       <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
     </div>
   </main>
+  
+  <section>
+    <div class="container">
+      <div class="row" data-masonry='{"percentPosition": true }'>
+        
+        <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card auto">  
+                <inertia-link :href="route('students')" :active="route().current('students')" >
+                  <img src="https://www.facultyenlight.com/sites/default/files/field/image/shutterstock_240227291_sm_0.jpg" class="card-img-top" alt="...">
+                </inertia-link> 
+                <div class="card-body">
+                  <h4 class="card-title">College Student</h4>
+                  <p class="card-text">College Student Record</p>
+                </div>
+                <!-- <div class="card-footer"></div>  -->
+              </div>
+          </div>
+
+
+          <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card auto"> 
+                <inertia-link :href="route('students')" :active="route().current('students')" > 
+                  <img src="https://michalflowersky.files.wordpress.com/2013/03/todolistdatabasediagram.png" class="card-img-top" alt="...">
+                </inertia-link> 
+                <div class="card-body">
+                  <h4 class="card-title">Todo App</h4>
+                  <p class="card-text">Description</p>
+
+                </div>
+                <!-- <div class="card-footer"></div>  -->
+              </div>
+          </div>
+
+
+          <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card auto"> 
+                <inertia-link :href="route('students')" :active="route().current('students')" > 
+                  <img src="https://blog.hootsuite.com/wp-content/uploads/2018/05/social-media-for-business.png" class="card-img-top" alt="...">
+                </inertia-link> 
+                <div class="card-body">
+                  <h4 class="card-title">Blog Post</h4>
+                  <p class="card-text">Small Social Media for fun</p>
+
+                </div>
+                <div class="card-footer"></div> 
+              </div>
+          </div>
+
+
+          <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card auto"> 
+                <inertia-link :href="route('students')" :active="route().current('students')" > 
+                  <img src="https://ceblog.s3.amazonaws.com/wp-content/uploads/2018/09/10131158/live-chat-4.jpg" class="card-img-top" alt="...">
+                </inertia-link> 
+                
+                <div class="card-body">
+                  <h4 class="card-title">Chatting</h4>
+                  <p class="card-text">Description</p>
+
+                </div>
+                <div class="card-footer"></div> 
+              </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card auto"> 
+                <inertia-link :href="route('students')" :active="route().current('students')" > 
+                  <img src="https://assets.pcmag.com/media/images/574604-video-conferencing.jpg" class="card-img-top" alt="...">
+                </inertia-link> 
+                
+                <div class="card-body">
+                  <h4 class="card-title">Video conferencing</h4>
+                  <p class="card-text">Description</p>
+
+                </div>
+                <div class="card-footer"></div> 
+              </div>
+          </div>  
+          
+        </div>
+
+
+    </div>
+  </section>
+
+
 </div>
 </template>
  
+
+
+
+
+
+
  <style scoped>
   
   .container {
