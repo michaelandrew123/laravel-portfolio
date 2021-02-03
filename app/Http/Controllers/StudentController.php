@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Student;
-
+use Inertia\Inertia;
 
 class StudentController extends Controller
 {
@@ -52,7 +52,13 @@ class StudentController extends Controller
      */
     public function show($id)
     { 
+        
         return Student::find($id);
+        // $student = Student::find($id);
+        // return Inertia::render('Student/Edit', [
+        //     'student' => $student
+        // ]);
+    
     }
 
     /**

@@ -32709,6 +32709,31 @@ select {
           animation: bounce 1s infinite;
 }
 
+.\? {
+  -webkit-animation: \?wobble 0.5s ease-in-out alternate infinite;
+          animation: \?wobble 0.5s ease-in-out alternate infinite;
+}
+
+@-webkit-keyframes \?wobble {
+  0% {
+    box-shadow: inset 4px 4px rgb(236, 15, 170), inset -4px -4px rgb(236, 15, 170);
+  }
+
+  100% {
+    box-shadow: inset 8px 8px rgb(236, 15, 170), inset -8px -8px rgb(236, 15, 170);
+  }
+}
+
+@keyframes \?wobble {
+  0% {
+    box-shadow: inset 4px 4px rgb(236, 15, 170), inset -4px -4px rgb(236, 15, 170);
+  }
+
+  100% {
+    box-shadow: inset 8px 8px rgb(236, 15, 170), inset -8px -8px rgb(236, 15, 170);
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

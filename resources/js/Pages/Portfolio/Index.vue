@@ -1,18 +1,6 @@
 <template>
-    <layout  title="Glass Css">
-        <!-- <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-        
-        
-            <div class="col-md-5 p-lg-5 mx-auto my-5">
-                <h1 class="display-4 fw-normal">Punny headline</h1>
-                <p>
-                    {{ message }}
-                </p>
-                <a class="btn btn-outline-secondary" href="/portfolio">Portfolio</a>
-            </div>
-            <div class="product-device shadow-sm d-none d-md-block"></div>
-            <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div> 
-        </div> -->
+    <layout  title="Glass">
+    
 
         <div class="glass-container">
             <section class="glass">
@@ -142,7 +130,7 @@ export default {
     }
     .glass{
         background: white;
-        min-height: 80vh;
+        height: 80vh;
         width:60%;
         background: linear-gradient(to right bottom,
             rgba(255, 255, 255, 0.8),
@@ -187,15 +175,32 @@ export default {
         );
         border-radius: 2rem;
     }
-    .glass-link{
-        display: flex;
-        margin: 2rem 0;
-        padding: 1rem 5rem;
-        align-items: center;
+    .glass-user > h3{
+        color: black;
+        font-size: 18px;
     }
-
+    
+    p{
+        font-size: 14px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    .glass-links{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .glass-link{
+        display: flex;  
+        align-items: center;
+        gap: 5px;
+    }
+    .glass-link > img{
+        width: 30px;
+    }
     .glass-link h2{
-        padding: 0rem 2rem;
+        /* padding: 0rem 2rem; */
     }
     .glass-games{
         flex: 2;
@@ -203,24 +208,32 @@ export default {
     }
     .glass-master{ 
         background: linear-gradient(to right top, #65dfc9, #6cdbeb);
-        border-radius: 2rem;
+        /* border-radius: 2rem; */
         color: white;
-        padding: 1rem;
+        /* padding: 1rem; */
+        padding: 10px 20px;
+        text-align: left;
         position: relative;
     }
     .glass-master img{
         position: absolute;
-        top: -6px;
-        right: 10px;
+        top: -15px;
+        right: 22px;
+        width: 35%;
     }
     .glass-master h2{
-        width: 40%;
+        width: 60%;
         color: white;
         font-weight: 600;
+        font-size: 18px;
     }
-
     .glass-status{
-        margin-bottom: 3rem;
+        /* margin-bottom: 3rem; */
+    }
+    .glass-status h1{
+        font-size: 20px;
+        color:black;
+        opacity: 0.8;
     }
     .glass-status input{
         background: linear-gradient(to right bottom,
@@ -230,16 +243,21 @@ export default {
 
         border: none;
         width: 50%;
-        padding:0.5rem;
+        padding: 5px 10px;
         border-radius: 2rem;
+        font-size: 14px;
     }
     .glass-games{
-        margin: 5rem;
+        margin: 20px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
-
+    .glass-cards{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
     .glass-card{
         display: flex; 
         background: linear-gradient(to left top, 
@@ -247,10 +265,14 @@ export default {
             rgba(255, 255, 255, 0.5)
         );
         border-radius: 1rem;
-        margin: 2rem 0rem;
-        padding: 2rem;
+        /* margin: 2rem 0rem;
+        padding: 2rem; */
         box-shadow: 6px 6px 20px rgba(122,122,122,0.2);
         justify-content: space-between;
+        padding: 10px; 
+    }
+    .glass-card img{
+        width: 15%;
     }
     .glass-progress{
         background: linear-gradient(to right top, #65dfc9, #6cdbeb);
@@ -273,6 +295,9 @@ export default {
         flex-direction: column;
         justify-content: space-between;
     }
+    .glass-card-info h2{
+        font-size: 18px;
+    } 
     .glass-percentage{
         font-weight: bold;
         background: linear-gradient(to right top, #65dfc9, #6cdbeb);

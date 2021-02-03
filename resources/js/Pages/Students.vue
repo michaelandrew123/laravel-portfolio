@@ -1,5 +1,5 @@
 <template>
-    <app-layout>
+    <app-layout title="Student Record">
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
                 Student
@@ -54,8 +54,63 @@
                                                     </span>
                                                 </td> 
                                                 <td class="px-6 py-4 whitespace-nowrap text-left text-sm font-medium">
-                                                    <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
-                                                    <a href="#" class="text-indigo-600 hover:text-indigo-900">Delete</a>
+                                                    <!-- <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a> -->
+                                                            <!-- <span @click="myStudentEdit(x.id)"  data-toggle="modal" data-target="#edit_student">click</span>
+ :href="`api/students/${x.id}`"
+                                                             -->
+
+                                                        <span data-toggle="modal" class="cursor-pointer pl-2 " :data-target="`#edit_student${x.id}`" @click="myStudentEdit(x.id)" >Edit</span>
+               
+               
+                                                                    <div class="modal fade edit_student" :id="'edit_student' + x.id " :rel="'edit_student' + x.id " tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                                                                        <div class="modal-dialog" role="document">
+                                                                            <div class="modal-content">
+                                                                                    <div class="modal-header">
+                                                                                            <h5 class="modal-title">Modal title</h5>
+                                                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                                                <span aria-hidden="true">&times;</span>
+                                                                                            </button>
+                                                                                        </div>
+                                                                                <div class="modal-body">
+                                                                                    <div class="container-fluid">
+                                                                                        
+
+                                                                                        <form id="studentEditForm" @submit.prevent="updateStudent">
+                                                                                            <div class="form-group">
+                                                                                              <label for="full_name">Full Name </label>
+                                                                                              <input type="text" name="full_name" id="full_name" v-model ="editStudent.full_name"  class="form-control" placeholder="Enter your full name" aria-describedby="helpId">
+                                                                                              <small id="helpId" class="text-muted">Add your full name</small>
+                                                                                            </div>
+                                                                                            <div class="form-group">
+                                                                                                <label for="date_of_enrollment">Date of Enrollment</label>
+                                                                                                <input type="date" name="date_of_enrollment" v-model="editStudent.date_of_enrollment" id="date_of_enrollment" class="form-control" placeholder="Select your date of enrollment" aria-describedby="helpId">
+                                                                                                <small id="helpId" class="text-muted">Date of Enrollment</small>
+                                                                                            </div>
+                                                                                            <div class="form-group">
+                                                                                                <label for=""></label>
+                                                                                                <select class="form-control" v-model="editStudent.course" name="course" id="add_course">
+                                                                                                    <option :value="x.course" disabled selected >{{ x.course}}</option> 
+                                                                                                    <option :value="y.course_name" v-for="y in courses " :key="y.id">{{ y.course_name }}</option>
+                                                                                                </select>
+                                                                                            </div> 
+                                                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                                                            <button type="submit" class="btn btn-primary">Save</button>
+                                                                                        </form>
+ 
+                                                                                    </div>
+                                                                                </div> 
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+    <!-- 
+                                                                 <span data-toggle="modal" :data-target="'#edit_student' + $x.id"  >click</span>
+         
+           -->
+ 
+                                                     <!-- <inertia-link :href="`/api/students/${x.id}/edit`">Edit</inertia-link>
+                                                     -->
+                                                     <inertia-link @click="myStudentDelete(x.id)" href="#" >Delete</inertia-link>
+                                                    <!-- <a href="" class="text-indigo-600 hover:text-indigo-900">Delete</a> -->
                                                 </td>
                                             </tr>
 
@@ -95,7 +150,7 @@
                                     <div class="form-group">
                                       <label for="full_name">FullName</label>
                                       <input type="text" name="full_name" v-model="student.full_name" id="full_name" class="form-control" placeholder="Please enter your full name" aria-describedby="helpId">
-                                      <small id="helpId" class="text-muted">Add your fullname</small>
+                                      <small id="helpId" class="text-muted">Add your full name</small>
                                     </div>
                                     <div class="form-group">
                                       <label for="date_of_enrollment">Date of Enrollment</label>
@@ -104,13 +159,15 @@
                                     </div>
                                     <div class="form-group">
                                       <label for=""></label>
-                                      <select class="form-control"  v-model="student.course" name="course" id="add_course">
-                                        <option value="" disabled selected ></option> 
+                                      <select class="form-control" v-model="student.course" name="course" id="add_course">
+                                        <option value="" disabled selected >Select Course</option> 
                                         <option :value="y.course_name" v-for="y in courses " :key="y.id">{{ y.course_name }}</option>
                                       </select>
                                     </div>
                                     <button type="submit" class="btn btn-primary">Save</button>
                                 </form>  
+
+
                             </div>
  
                         </div> 
@@ -118,8 +175,8 @@
                 </div>
             </div>
             <!--End add student sections -->
-
-            <!-- Button trigger modal -->
+   
+            <!-- Button trigger course modal -->
             <button type="button" class="btn btn-primary btn-sm m-auto" data-toggle="modal" data-target="#addCourse">
               Add Course
             </button>
@@ -171,6 +228,7 @@
         data(){
             return {
                 students: [],
+                editStudent: [],
                 student: {
                     full_name: '',
                     date_of_enrollment: '',
@@ -209,14 +267,63 @@
                     Fire.$emit('addedCourse')
                 } 
             },
+            myStudentEdit(id){
+                axios.get(`api/students/${id}`)
+                .then((response)=>{ 
+                    this.editStudent = response.data;
+                }).catch((err)=>{
+                    console.log(err);
+                });
+            },
+            
+            async updateStudent(){ 
+                const res = await axios.put(`api/students/${this.editStudent.id}`, this.editStudent); 
+                    if(res.status === 200){
+                        Toast.fire({
+                            icon: 'success',
+                            title: res.data
+                        });
+                        $('.edit_student').modal('hide');
+                        
+                        Fire.$emit('updatedStudent');
+
+                    }else{
+                        console.log("something error updating student");
+                    }
+            },
+            async myStudentDelete(id){
+                
+                const res = await axios.delete(`api/students/${id}`)
+                if(res.status === 200){
+                    Toast.fire({
+                        icon: 'success',
+                        title: res.data
+                    });
+
+                    Fire.$emit('deletedSutdent');
+                }
+            },
+
             getStudent(){
                 axios.get('api/students')
                 .then((res)=>{
                     this.students = res.data;
+
+                    Fire.$emit('edited_student');
                 }).catch((err)=>{
                     console.log(err);
                 })
             },  
+            // myStudentEdit(id){
+                
+            //     axios.get(`api/student/${id}`)
+            //     .then((res)=>{
+            //         this.editStudent = res.data;
+            //     }).catch((err)=>{
+            //         console.log(err);
+            //     });
+ 
+            // }, 
             getCourse(){
                 axios.get('api/courses')
                 .then((res)=>{
@@ -227,6 +334,11 @@
             }  
         },
         created(){
+            // this.myStudentEdit(this.id); 
+            // Fire.$on('edited_student', ()=>{
+            //     this.myStudentEdit(this.id); 
+            // });
+
             this.getStudent();
             this.getCourse();
             Fire.$on('addedStudent', ()=>{
@@ -234,7 +346,17 @@
             });
             Fire.$on('addedCourse', ()=>{
                 this.getCourse();
+            });
+            
+            Fire.$on('updatedStudent', ()=>{
+                this.getStudent();
+            });
+
+            Fire.$on('deletedSutdent', ()=>{
+                this.getStudent();
             })
+            
+
         }
 
 

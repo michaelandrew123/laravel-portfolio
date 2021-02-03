@@ -84,10 +84,9 @@
                 
                 <div class="card-body">
                   <h4 class="card-title">Chatting</h4>
-                  <p class="card-text">Description</p>
+                  <p class="card-text">Build a real time chat using laravel vue and inertia with socket</p>
 
-                </div>
-                <div class="card-footer"></div> 
+                </div> 
               </div>
           </div>
 
@@ -101,13 +100,40 @@
                   <h4 class="card-title">Video conferencing</h4>
                   <p class="card-text">Description</p>
 
-                </div>
-                <div class="card-footer"></div> 
+                </div> 
               </div>
           </div>  
-          
-        </div>
 
+
+           <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card auto"> 
+                <inertia-link :href="route('intercom_inbox')" :active="route().current('intercom_inbox')" > 
+                  <img src="https://miro.medium.com/max/2720/1*VKOMtQZm5yZ0goTl1u623Q.png" class="card-img-top" alt="...">
+                </inertia-link> 
+                
+                <div class="card-body">
+                  <h4 class="card-title">Intercom's Inbox UI with Tailwind CSS</h4>
+                  <p class="card-text">Building Inercom's Inbox UI from scratch using Tailwind Css</p>
+
+                </div> 
+              </div>
+          </div>  
+
+
+          <div class="col-sm-6 col-lg-4 mb-4">
+              <div class="card auto"> 
+                <inertia-link :href="route('trello')" :active="route().current('trello')" > 
+                  <img src="https://www.idalko.com/wp-content/uploads/2018/03/Trello-Guide.png" class="card-img-top" alt="...">
+                </inertia-link>  
+                <div class="card-body">
+                  <h4 class="card-title">Trello</h4>
+                  <p class="card-text">Building trello board using tailwindcss</p>
+                </div>
+                <div class="card-footer">February 03, 2021</div> 
+              </div>
+          </div>  
+
+        </div>
 
     </div>
   </section>

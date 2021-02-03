@@ -1,3 +1,6 @@
+
+heroicon.dev
+
 code laravelproject //open laravelproject
 
 php artisan tinker
@@ -35,4 +38,11 @@ npm install sweetalert2
 
 php artisan migrate
 
+//add question mark plugin
+npm install tailwindcss-question-mark
+https://github.com/GavinJoyce/tailwindcss-question-mark
+
+
+
+npx kill-port 8000
 

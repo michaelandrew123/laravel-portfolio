@@ -33,6 +33,20 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/students', function () {
     return Inertia::render('Students');
 })->name('students');
 
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/intercom_inbox', function () {
+    return Inertia::render('InterCom/InterComIndex'); 
+})->name('intercom_inbox');
+
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/trello', function () {
+    return Inertia::render('Trello'); 
+})->name('trello');
+
+
+
+
+
 // Route::middleware(['auth:sanctum', 'verified'])->get('/portfolio', 'PortfolioController@index')->name('portfolio.view');
 // Route::middleware(['auth:sanctum', 'verified'])->get('/portfolio', 'PortfolioController@landing')->name('portfolio.landing');  
 
