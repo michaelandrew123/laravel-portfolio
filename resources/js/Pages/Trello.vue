@@ -70,7 +70,7 @@
                 </div>
 
                 <!--Main Content-->
-                <div class="flex flex-col items-start flex-auto space-y-10 ?">
+                <div class="flex flex-col items-start flex-auto space-y-10 ">
 
 
                     <!--Col 1 -->

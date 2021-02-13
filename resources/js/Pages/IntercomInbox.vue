@@ -60,6 +60,244 @@
                             
                         </div> 
                     </a>  
+
+                    <a class="block border-b cursor-pointer"> 
+                        <div class="border-l-2 border-blue-500 p-3 space-y-4 hover:bg-gray-100"> 
+                            <div class="flex flex-row items-center space-x-2"> 
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <strong class="flex-grow text-sm">Mike Suarez</strong>
+                                <div class="text-sm text-grat-600">5hrs</div> 
+                            </div>
+
+                            <div class="flex flex-row aligns-center space-x-1"> 
+                                <svg class="flex-none w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                
+                                <div class="flex-grow text-xs truncate">Some message content here!!! asdasdasdasdasdasdasda asdasdasdasdasdasd asdasd</div>
+                            </div>
+                            
+                        </div> 
+                    </a>  
+
+
+                    <a class="block border-b cursor-pointer"> 
+                        <div class="border-l-2 border-blue-500 p-3 space-y-4 hover:bg-gray-100"> 
+                            <div class="flex flex-row items-center space-x-2"> 
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <strong class="flex-grow text-sm">Mike Suarez</strong>
+                                <div class="text-sm text-grat-600">5hrs</div> 
+                            </div>
+
+                            <div class="flex flex-row aligns-center space-x-1"> 
+                                <svg class="flex-none w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                
+                                <div class="flex-grow text-xs truncate">Some message content here!!! asdasdasdasdasdasdasda asdasdasdasdasdasd asdasd</div>
+                            </div>
+                            
+                        </div> 
+                    </a>  
+
+
+                    <a class="block border-b cursor-pointer"> 
+                        <div class="border-l-2 border-blue-500 p-3 space-y-4 hover:bg-gray-100"> 
+                            <div class="flex flex-row items-center space-x-2"> 
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <strong class="flex-grow text-sm">Mike Suarez</strong>
+                                <div class="text-sm text-grat-600">5hrs</div> 
+                            </div>
+
+                            <div class="flex flex-row aligns-center space-x-1"> 
+                                <svg class="flex-none w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                
+                                <div class="flex-grow text-xs truncate">Some message content here!!! asdasdasdasdasdasdasda asdasdasdasdasdasd asdasd</div>
+                            </div>
+                            
+                        </div> 
+                    </a>  
+
+
+                    <a class="block border-b cursor-pointer"> 
+                        <div class="border-l-2 border-blue-500 p-3 space-y-4 hover:bg-gray-100"> 
+                            <div class="flex flex-row items-center space-x-2"> 
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <strong class="flex-grow text-sm">Mike Suarez</strong>
+                                <div class="text-sm text-grat-600">5hrs</div> 
+                            </div>
+
+                            <div class="flex flex-row aligns-center space-x-1"> 
+                                <svg class="flex-none w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                
+                                <div class="flex-grow text-xs truncate">Some message content here!!! asdasdasdasdasdasdasda asdasdasdasdasdasd asdasd</div>
+                            </div>
+                            
+                        </div> 
+                    </a>  
+
+
+                    <a class="block border-b cursor-pointer"> 
+                        <div class="border-l-2 border-blue-500 p-3 space-y-4 hover:bg-gray-100"> 
+                            <div class="flex flex-row items-center space-x-2"> 
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <strong class="flex-grow text-sm">Mike Suarez</strong>
+                                <div class="text-sm text-grat-600">5hrs</div> 
+                            </div>
+
+                            <div class="flex flex-row aligns-center space-x-1"> 
+                                <svg class="flex-none w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                
+                                <div class="flex-grow text-xs truncate">Some message content here!!! asdasdasdasdasdasdasda asdasdasdasdasdasd asdasd</div>
+                            </div>
+                            
+                        </div> 
+                    </a>  
+
+
+                    <a class="block border-b cursor-pointer"> 
+                        <div class="border-l-2 border-blue-500 p-3 space-y-4 hover:bg-gray-100"> 
+                            <div class="flex flex-row items-center space-x-2"> 
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <strong class="flex-grow text-sm">Mike Suarez</strong>
+                                <div class="text-sm text-grat-600">5hrs</div> 
+                            </div>
+
+                            <div class="flex flex-row aligns-center space-x-1"> 
+                                <svg class="flex-none w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                
+                                <div class="flex-grow text-xs truncate">Some message content here!!! asdasdasdasdasdasdasda asdasdasdasdasdasd asdasd</div>
+                            </div>
+                            
+                        </div> 
+                    </a>  
+
+
+
+                    <a class="block border-b cursor-pointer"> 
+                        <div class="border-l-2 border-blue-500 p-3 space-y-4 hover:bg-gray-100"> 
+                            <div class="flex flex-row items-center space-x-2"> 
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <strong class="flex-grow text-sm">Mike Suarez</strong>
+                                <div class="text-sm text-grat-600">5hrs</div> 
+                            </div>
+
+                            <div class="flex flex-row aligns-center space-x-1"> 
+                                <svg class="flex-none w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                
+                                <div class="flex-grow text-xs truncate">Some message content here!!! asdasdasdasdasdasdasda asdasdasdasdasdasd asdasd</div>
+                            </div>
+                            
+                        </div> 
+                    </a>  
+
+
+
+                    <a class="block border-b cursor-pointer"> 
+                        <div class="border-l-2 border-blue-500 p-3 space-y-4 hover:bg-gray-100"> 
+                            <div class="flex flex-row items-center space-x-2"> 
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <strong class="flex-grow text-sm">Mike Suarez</strong>
+                                <div class="text-sm text-grat-600">5hrs</div> 
+                            </div>
+
+                            <div class="flex flex-row aligns-center space-x-1"> 
+                                <svg class="flex-none w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                
+                                <div class="flex-grow text-xs truncate">Some message content here!!! asdasdasdasdasdasdasda asdasdasdasdasdasd asdasd</div>
+                            </div>
+                            
+                        </div> 
+                    </a>  
+
+
+
+                    <a class="block border-b cursor-pointer"> 
+                        <div class="border-l-2 border-blue-500 p-3 space-y-4 hover:bg-gray-100"> 
+                            <div class="flex flex-row items-center space-x-2"> 
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <strong class="flex-grow text-sm">Mike Suarez</strong>
+                                <div class="text-sm text-grat-600">5hrs</div> 
+                            </div>
+
+                            <div class="flex flex-row aligns-center space-x-1"> 
+                                <svg class="flex-none w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                
+                                <div class="flex-grow text-xs truncate">Some message content here!!! asdasdasdasdasdasdasda asdasdasdasdasdasd asdasd</div>
+                            </div>
+                            
+                        </div> 
+                    </a>  
+
+
+
+                    <a class="block border-b cursor-pointer"> 
+                        <div class="border-l-2 border-blue-500 p-3 space-y-4 hover:bg-gray-100"> 
+                            <div class="flex flex-row items-center space-x-2"> 
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <strong class="flex-grow text-sm">Mike Suarez</strong>
+                                <div class="text-sm text-grat-600">5hrs</div> 
+                            </div>
+
+                            <div class="flex flex-row aligns-center space-x-1"> 
+                                <svg class="flex-none w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                
+                                <div class="flex-grow text-xs truncate">Some message content here!!! asdasdasdasdasdasdasda asdasdasdasdasdasd asdasd</div>
+                            </div>
+                            
+                        </div> 
+                    </a>  
+
+
+                    <a class="block border-b cursor-pointer"> 
+                        <div class="border-l-2 border-blue-500 p-3 space-y-4 hover:bg-gray-100"> 
+                            <div class="flex flex-row items-center space-x-2"> 
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <strong class="flex-grow text-sm">Mike Suarez</strong>
+                                <div class="text-sm text-grat-600">5hrs</div> 
+                            </div>
+
+                            <div class="flex flex-row aligns-center space-x-1"> 
+                                <svg class="flex-none w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                
+                                <div class="flex-grow text-xs truncate">Some message content here!!! asdasdasdasdasdasdasda asdasdasdasdasdasd asdasd</div>
+                            </div>
+                            
+                        </div> 
+                    </a>  
+
+
+
+                    <a class="block border-b cursor-pointer"> 
+                        <div class="border-l-2 border-blue-500 p-3 space-y-4 hover:bg-gray-100"> 
+                            <div class="flex flex-row items-center space-x-2"> 
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <strong class="flex-grow text-sm">Mike Suarez</strong>
+                                <div class="text-sm text-grat-600">5hrs</div> 
+                            </div>
+
+                            <div class="flex flex-row aligns-center space-x-1"> 
+                                <svg class="flex-none w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                
+                                <div class="flex-grow text-xs truncate">Some message content here!!! asdasdasdasdasdasdasda asdasdasdasdasdasd asdasd</div>
+                            </div>
+                            
+                        </div> 
+                    </a>  
+
+
+                    <a class="block border-b cursor-pointer"> 
+                        <div class="border-l-2 border-blue-500 p-3 space-y-4 hover:bg-gray-100"> 
+                            <div class="flex flex-row items-center space-x-2"> 
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                <strong class="flex-grow text-sm">Mike Suarez</strong>
+                                <div class="text-sm text-grat-600">5hrs</div> 
+                            </div>
+
+                            <div class="flex flex-row aligns-center space-x-1"> 
+                                <svg class="flex-none w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                
+                                <div class="flex-grow text-xs truncate">Some message content here!!! asdasdasdasdasdasdasda asdasdasdasdasdasd asdasd</div>
+                            </div>
+                            
+                        </div> 
+                    </a>  
                 </div> 
             
             </div>

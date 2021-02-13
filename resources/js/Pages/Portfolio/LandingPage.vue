@@ -1,152 +1,163 @@
-<template> 
-<div>
-       
-  <header class="site-header sticky-top py-1">
-    <nav class="container d-flex flex-column flex-md-row justify-content-between">
-      <a class="py-2" href="#" aria-label="Product">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
-      </a>
-      <a class="py-2 d-none d-md-inline-block" href="#">Tour</a>
-      <a class="py-2 d-none d-md-inline-block" href="#">Product</a>
-      <a class="py-2 d-none d-md-inline-block" href="#">Features</a>
-      <a class="py-2 d-none d-md-inline-block" href="#">Enterprise</a>
-      <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
-      <a class="py-2 d-none d-md-inline-block" href="#">Pricing</a>
-      <a class="py-2 d-none d-md-inline-block" href="#">Cart</a>
-    </nav>
-  </header>
-    
-  <main>
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-      <div class="col-md-5 p-lg-5 mx-auto my-5">
-        <h1 class="display-4 fw-normal">Punny headline</h1>
-        <p class="lead fw-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>
-        <a class="btn btn-outline-secondary" href="/portfolio">Portfolio</a>
-      </div>
-      <div class="product-device shadow-sm d-none d-md-block"></div>
-      <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-    </div>
-  </main>
-  
-  <section>
-    <div class="container">
-      <div class="row" data-masonry='{"percentPosition": true }'>
-        
-        <div class="col-sm-6 col-lg-4 mb-4">
-              <div class="card auto">  
-                <inertia-link :href="route('students')" :active="route().current('students')" >
-                  <img src="https://www.facultyenlight.com/sites/default/files/field/image/shutterstock_240227291_sm_0.jpg" class="card-img-top" alt="...">
-                </inertia-link> 
-                <div class="card-body">
-                  <h4 class="card-title">College Student</h4>
-                  <p class="card-text">College Student Record</p>
-                </div>
-                <!-- <div class="card-footer"></div>  -->
-              </div>
+<template>  
+  <layout title="Porfolio">
+    <div>
+      <main>
+        <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+          <div class="col-md-5 p-lg-5 mx-auto my-5">
+            <h1 class="display-4 fw-normal">Punny headline</h1>
+            <p class="lead fw-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>
+            <a class="btn btn-outline-secondary" href="/portfolio">Portfolio</a>
           </div>
-
-
-          <div class="col-sm-6 col-lg-4 mb-4">
-              <div class="card auto"> 
-                <inertia-link :href="route('students')" :active="route().current('students')" > 
-                  <img src="https://michalflowersky.files.wordpress.com/2013/03/todolistdatabasediagram.png" class="card-img-top" alt="...">
-                </inertia-link> 
-                <div class="card-body">
-                  <h4 class="card-title">Todo App</h4>
-                  <p class="card-text">Description</p>
-
-                </div>
-                <!-- <div class="card-footer"></div>  -->
-              </div>
-          </div>
-
-
-          <div class="col-sm-6 col-lg-4 mb-4">
-              <div class="card auto"> 
-                <inertia-link :href="route('students')" :active="route().current('students')" > 
-                  <img src="https://blog.hootsuite.com/wp-content/uploads/2018/05/social-media-for-business.png" class="card-img-top" alt="...">
-                </inertia-link> 
-                <div class="card-body">
-                  <h4 class="card-title">Blog Post</h4>
-                  <p class="card-text">Small Social Media for fun</p>
-
-                </div>
-                <div class="card-footer"></div> 
-              </div>
-          </div>
-
-
-          <div class="col-sm-6 col-lg-4 mb-4">
-              <div class="card auto"> 
-                <inertia-link :href="route('students')" :active="route().current('students')" > 
-                  <img src="https://ceblog.s3.amazonaws.com/wp-content/uploads/2018/09/10131158/live-chat-4.jpg" class="card-img-top" alt="...">
-                </inertia-link> 
-                
-                <div class="card-body">
-                  <h4 class="card-title">Chatting</h4>
-                  <p class="card-text">Build a real time chat using laravel vue and inertia with socket</p>
-
-                </div> 
-              </div>
-          </div>
-
-          <div class="col-sm-6 col-lg-4 mb-4">
-              <div class="card auto"> 
-                <inertia-link :href="route('students')" :active="route().current('students')" > 
-                  <img src="https://assets.pcmag.com/media/images/574604-video-conferencing.jpg" class="card-img-top" alt="...">
-                </inertia-link> 
-                
-                <div class="card-body">
-                  <h4 class="card-title">Video conferencing</h4>
-                  <p class="card-text">Description</p>
-
-                </div> 
-              </div>
-          </div>  
-
-
-           <div class="col-sm-6 col-lg-4 mb-4">
-              <div class="card auto"> 
-                <inertia-link :href="route('intercom_inbox')" :active="route().current('intercom_inbox')" > 
-                  <img src="https://miro.medium.com/max/2720/1*VKOMtQZm5yZ0goTl1u623Q.png" class="card-img-top" alt="...">
-                </inertia-link> 
-                
-                <div class="card-body">
-                  <h4 class="card-title">Intercom's Inbox UI with Tailwind CSS</h4>
-                  <p class="card-text">Building Inercom's Inbox UI from scratch using Tailwind Css</p>
-
-                </div> 
-              </div>
-          </div>  
-
-
-          <div class="col-sm-6 col-lg-4 mb-4">
-              <div class="card auto"> 
-                <inertia-link :href="route('trello')" :active="route().current('trello')" > 
-                  <img src="https://www.idalko.com/wp-content/uploads/2018/03/Trello-Guide.png" class="card-img-top" alt="...">
-                </inertia-link>  
-                <div class="card-body">
-                  <h4 class="card-title">Trello</h4>
-                  <p class="card-text">Building trello board using tailwindcss</p>
-                </div>
-                <div class="card-footer">February 03, 2021</div> 
-              </div>
-          </div>  
-
+          <div class="product-device shadow-sm d-none d-md-block"></div>
+          <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
         </div>
-
-    </div>
-  </section>
-
-
-</div>
-</template>
+      </main>
+      
+      <section>
+        <div class="container">
  
 
 
+          <div class="row" data-masonry='{"percentPosition": true }'>
+
+            <div class="col-sm-6 col-lg-4 mb-4">
+                  <div class="card auto">  
+                    <inertia-link :href="route('students')" :active="route().current('students')" >
+                      <img :src="'../storage/portfolio/student.png'" class="card-img-top" alt="...">
+                    </inertia-link> 
+                    <div class="card-body">
+                      <h4 class="card-title">College Student</h4>
+                      <p class="card-text">College Student Record</p>
+                    </div>
+                    <!-- <div class="card-footer"></div>  -->
+                    
+                      <div class="card-footer">December 16, 2020</div> 
+                  </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-4 mb-4">
+                  <div class="card auto">  
+                    <inertia-link href="/portfolio" >
+                      <img :src="'../storage/portfolio/chat_glass_css.png'" class="card-img-top" alt="..."> 
+                    </inertia-link> 
+                    <div class="card-body">
+                      <h4 class="card-title">Chat Glass Css</h4>
+                      <p class="card-text">Build in pure css</p>
+                    </div>
+                      <div class="card-footer">December 28, 2020</div> 
+                  </div>
+              </div>
+
+
+              <div class="col-sm-6 col-lg-4 mb-4">
+                  <div class="card auto"> 
+                    <inertia-link :href="route('todo')" :active="route().current('todo')" > 
+                      <img :src="'../storage/portfolio/todo.png'" class="card-img-top" alt="...">
+                    </inertia-link> 
+                    <div class="card-body">
+                      <h4 class="card-title">Todo App</h4>
+                      <p class="card-text">Description</p>
+
+                    </div>
+                     <div class="card-footer">February 05, 2021</div> 
+                  </div>
+              </div>
+ 
+              <div class="col-sm-6 col-lg-4 mb-4">
+                  <div class="card auto"> 
+                    <inertia-link :href="route('social-media')" :active="route().current('social-media')" > 
+                      <img :src="'../storage/portfolio/social-media.png'" class="card-img-top" alt="...">
+                    </inertia-link> 
+                    <div class="card-body">
+                      <h4 class="card-title">Social Media</h4>
+                      <p class="card-text">Small Social Media for fun</p>
+
+                    </div>
+                    <div class="card-footer">February 06, 2021</div> 
+                  </div>
+              </div>
+
+
+              <div class="col-sm-6 col-lg-4 mb-4">
+                  <div class="card auto"> 
+                    <inertia-link :href="route('students')" :active="route().current('students')" > 
+                      <img src="https://ceblog.s3.amazonaws.com/wp-content/uploads/2018/09/10131158/live-chat-4.jpg" class="card-img-top" alt="...">
+                    </inertia-link> 
+                    
+                    <div class="card-body">
+                      <h4 class="card-title">Chatting</h4>
+                      <p class="card-text">Build a real time chat using laravel vue and inertia with socket</p>
+
+                    </div> 
+                  </div>
+              </div>
+
+              <div class="col-sm-6 col-lg-4 mb-4">
+                  <div class="card auto"> 
+                    <inertia-link :href="route('students')" :active="route().current('students')" > 
+                      <img src="https://assets.pcmag.com/media/images/574604-video-conferencing.jpg" class="card-img-top" alt="...">
+                    </inertia-link>  
+                    <div class="card-body">
+                      <h4 class="card-title">Video conferencing</h4>
+                      <p class="card-text">Description</p>
+
+                    </div> 
+                  </div>
+              </div>  
+
+
+              <div class="col-sm-6 col-lg-4 mb-4">
+                  <div class="card auto"> 
+                    <inertia-link :href="route('intercom_inbox')" :active="route().current('intercom_inbox')" > 
+                      <img :src="'../storage/portfolio/intercom_inbox.png'" class="card-img-top" alt="...">
+                    </inertia-link> 
+                    
+                    <div class="card-body">
+                      <h4 class="card-title">Intercom's Inbox UI with Tailwind CSS</h4>
+                      <p class="card-text">Building Inercom's Inbox UI from scratch using Tailwind Css</p>
+
+                    </div> 
+                  </div>
+              </div>  
+
+
+              <div class="col-sm-6 col-lg-4 mb-4">
+                  <div class="card auto"> 
+                    <inertia-link :href="route('trello')" :active="route().current('trello')" > 
+                      <img :src="'../storage/portfolio/trello.png'" class="card-img-top" alt="...">
+                    </inertia-link>  
+                    <div class="card-body">
+                      <h4 class="card-title">Trello</h4>
+                      <p class="card-text">Building trello board using tailwindcss</p>
+                    </div>
+                    <div class="card-footer">February 03, 2021</div> 
+                  </div>
+              </div>  
 
 
 
+
+            </div>
+
+        </div>
+      </section>
+
+
+    </div>
+  </layout>
+</template>
+ 
+<script>
+
+import Layout from '../Shared/Layout'  
+export default {
+  components: {
+      Layout 
+    },
+}
+</script>
+
+ 
 
  <style scoped>
   

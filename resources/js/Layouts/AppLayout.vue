@@ -111,7 +111,7 @@
                                             Profile
                                         </jet-dropdown-link> 
 
-                                        <jet-dropdown-link href="/portfolio" >
+                                        <jet-dropdown-link href="/portfolio/landing-page" >
                                             Porfolio
                                         </jet-dropdown-link>
 

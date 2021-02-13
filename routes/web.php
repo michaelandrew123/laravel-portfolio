@@ -44,7 +44,14 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/trello', function () {
 })->name('trello');
 
 
+Route::middleware(['auth:sanctum', 'verified'])->get('/todo', function () {
+    return Inertia::render('Todo'); 
+})->name('todo');
 
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/social-media', function () {
+    return Inertia::render('SocialMedia'); 
+})->name('social-media');
 
 
 // Route::middleware(['auth:sanctum', 'verified'])->get('/portfolio', 'PortfolioController@index')->name('portfolio.view');
